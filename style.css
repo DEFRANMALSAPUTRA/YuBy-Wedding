@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --pink: #b185db;
   --bg: #0a0a0a;
@@ -38,8 +39,7 @@ body {
 }
 
 .hero h1,
-.hero h4,
-.hero p {
+.hero h4 {
   text-shadow: var(--shadow);
 }
 
@@ -563,8 +563,8 @@ body {
 }
 
 .gallery {
-  background-color: #D0A2F7;
-  background-image: linear-gradient(0deg, #D0A2F7 0%, #A367B1 100%);
+  background-color: #d0a2f7;
+  background-image: linear-gradient(0deg, #d0a2f7 0%, #a367b1 100%);
 }
 
 .gallery span {
@@ -595,12 +595,12 @@ body {
 }
 
 .rsvp button:hover {
-  background-color: #A367B1;
+  background-color: #a367b1;
   color: var(--pink);
   border: 1px solid var(--pink);
 }
 
-.komen{
+.komen {
   background-color: white;
   border-radius: 5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -611,7 +611,7 @@ body {
   background-image: linear-gradient(180deg, #a06cd5 0%, #c19ee0 100%);
 }
 
-.gifts h2{
+.gifts h2 {
   color: #dac3e8 !important;
 }
 .gifts span {
@@ -626,9 +626,10 @@ body {
   color: white;
 }
 
-.bca, .bsi{
+.bca,
+.bsi {
   margin-bottom: 1rem;
-  width: 100px; 
+  width: 100px;
   height: auto;
 }
 
@@ -712,7 +713,7 @@ footer .wave {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(img/wave\ \(4\).png);
+  background: url(img//wave4.png);
   background-size: 1000px 100px;
 }
 
@@ -837,9 +838,39 @@ footer .wave#wave4 {
   html {
     font-size: 60%;
   }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/weding.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+  }
+
+  .hero h1,
+  .hero h4,
+  .hero p {
+    color: #0a0a0a;
+    /* text-shadow: var(--shadow); */
+  }
+
+  .surat {
+    border-top: 1px dashed #666;
+    border-bottom: 1px dashed #666;
+    margin-bottom: 50px;
+  }
+
   .simply-countdown > .simply-section {
-    padding: 35px;
+    padding: 30px;
     margin: 3px;
+    border-radius: 25%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 
   .timeline li .timeline-image {
@@ -859,5 +890,4 @@ footer .wave#wave4 {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
-
 }
