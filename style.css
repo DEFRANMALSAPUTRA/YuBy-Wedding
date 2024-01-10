@@ -19,6 +19,12 @@ body {
   min-height: 4000px;
 }
 
+.musik{
+  opacity: 0.5;
+  visibility: hidden;
+
+}
+
 .hero::before {
   content: "";
   position: absolute;
