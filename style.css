@@ -21,7 +21,7 @@ body {
 
 .musik{
   opacity: 0.5;
-  visibility: hidden;
+  visibility: hidden !important;
 
 }
 
