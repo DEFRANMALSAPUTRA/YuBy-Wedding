@@ -607,8 +607,7 @@ body {
 }
 
 .komen {
-  background: transparent;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) !important;
 }
 
 .gifts {
