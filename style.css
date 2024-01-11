@@ -19,7 +19,7 @@ body {
   min-height: 4000px;
 }
 
-.musik{
+.musik {
   opacity: 0.5;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 3rem;
@@ -607,9 +607,8 @@ body {
 }
 
 .komen {
-  background-color: white;
-  border-radius: 5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 
 .gifts {
